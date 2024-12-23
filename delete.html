@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delete Account</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Delete Your Account</h1>
+
+  <p>Are you sure you want to delete your account? This action is irreversible and will result in the loss of all your data.</p>
+
+  <form action="/delete" method="post">
+    <label for="confirm-delete">Type 'DELETE' to confirm: </label>
+    <input type="text" id="confirm-delete" name="confirm-delete" required>
+    <button type="submit">Delete Account</button>
+  </form>
+
+  <p><a href="food.html">Cancel</a></p>
+</body>
+</html>

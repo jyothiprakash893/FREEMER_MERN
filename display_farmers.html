@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        h1 {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Farmer List</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Unique ID</th>
+                <th>Place</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody id="farmer-list">
+            <!-- Farmer data will be displayed here dynamically -->
+        </tbody>
+    </table>
+    <script>
+        // JavaScript code to fetch and display farmer data
+
+        // Make a fetch request to /displayFarmers
+        fetch('/displayFarmers')
+            .then(response => response.json())
+            .then(data => {
+                const farmerList = document.getElementById('farmer-list');
+                data.forEach(farmer => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${farmer.name}</td>
+                        <td>${farmer.unique_id}</td>
+                        <td>${farmer.place}</td>
+                        <td>${farmer.age}</td>
+                    `;
+                    farmerList.appendChild(row);
+                });
+            })
+            .catch(error => console.error(error));
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add Crop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Add Crop</h2>
+        <form action="/addCrop" method="post">
+            <div>
+                <label for="crop">Crop:</label>
+                <input type="text" id="crop" name="crop" placeholder="Crop Name" required>
+            </div>
+            <div>
+                <label for="time">Time:</label>
+                <input type="text" id="time" name="time" placeholder="Crop Time" required>
+            </div>
+            <div>
+                <label for="crop_id">Crop ID:</label>
+                <input type="text" id="crop_id" name="crop_id" placeholder="Crop ID" required>
+            </div>
+            <div>
+                <label for="season">Season:</label>
+                <input type="text" id="season" name="season" placeholder="Crop Season" required>
+            </div>
+            <button type="submit">Add Crop</button>
+        </form>
+    </div>
+</body>
+</html>

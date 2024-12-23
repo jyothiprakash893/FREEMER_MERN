@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Data Update</title>
+<style>
+body {
+font-family: Arial, sans-serif; background-color: #f0f0f0; text-align: center;
+}
+.container {
+max-width: 450px; margin: 0 auto;
+
+padding: 20px; background-color: #fff; border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+h2 {
+margin-bottom: 20px;
+}
+label {
+display: block; margin-bottom: 8px;
+}
+input[type="text"] { width: 95%; padding: 10px;
+
+margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px;
+}
+button {
+background-color: #007BFF; color: #fff;
+padding: 10px 20px; border: none;
+border-radius: 5px; cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Data Update</h2>
+<form action="/update" method="post">
+ 
+
+
+<br>
+ 
+<label for="fname">Enter the first name:</label>
+<input type="text" name="fname" id="fname" placeholder="Enter your First Name" required>
+
+<label for="lname">Enter the last name:</label>
+<input type="text" name="lname" id="phone" placeholder="Enter your Last Name" required>
+
+<label for="password">Enter Your New Password:</label>
+<input type="text" name="password" id="password" placeholder="Enter your Updated Password" required>
+
+&nbsp;&nbsp;&nbsp;
+<button type="submit">Update</button>
+</form>
+</div>
+</body>
+</html

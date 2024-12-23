@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adopt a Farm</title>
+    <style>
+        body {
+            background-color: #f7f7f7;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        tr.heading {
+            background: #33cc33;
+        }
+
+        tr.sub-heading {
+            background: #337ab7;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 20px 0;
+            color: #337ab7;
+        }
+
+        tr.footer {
+            background: #33cc33;
+            color: #fff;
+        }
+
+        tr.footer td {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .image-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap; /* Prevent wrapping to keep images in a single row */
+        }
+
+        .image-card {
+            width: auto; /* Allow images to determine their width */
+            padding: 20px;
+            margin: 0 10px; /* Add horizontal margin to separate images */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            background: #fff;
+        }
+
+        .image-card img {
+            width: 100%; /* Make the images fill the image cards */
+            max-height: 100%; /* Limit the image card height */
+        }
+
+        .image-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #337ab7;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .image-button:hover {
+            background: #ff1a1a;
+        }
+
+        .image-name {
+            font-weight: bold;
+            color: #337ab7;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr class="heading">
+            <td colspan="6" align="center">
+                <img src="images/logo.jpg" style="height:100px;">
+            </td>
+        </tr>
+        <tr class="sub-heading">
+            <td align="center" style="width: 33.33%;">
+                <a href="HR.html" class="image-button">Hire Human Resources</a>
+            </td>
+            <td align="center" style="width: 33.33%;">
+                <a href="adopt farm.html" class="image-button">Adopt a farm</a>
+            </td>
+            <td align="center" style="width: 33.33%;">
+                <a href="vehicles.html" class="image-button">Hire vehicles</a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6">
+                <h2>Farms near you</h2>
+            </td>
+        </tr>
+        <tr>
+            <td class="info">
+                <div class="image-grid">
+                    <div class="image-card">
+                        <img src="images/brinjal.jpg" alt="Brinjal">
+                        <p class="image-name">Brinjal</p>
+                        <a href="#" class="image-button">Adopt</a>
+                    </div>
+                    <div class="image-card">
+                        <img src="images/Wheat.jpg" alt="Wheat">
+                        <p class="image-name">Wheat</p>
+                        <a href="#" class="image-button">Adopt</a>
+                    </div>
+                    <div class="image-card">
+                        <img src="images/tomato.jpg" alt="Tomato">
+                        <p class="image-name">Tomato</p>
+                        <a href="#" class="image-button">Adopt</a>
+                    </div>
+                    <div class="image-card">
+                        <img src="images/Chilli.jpg" alt="Chilli">
+                        <p class="image-name">Chilli</p>
+                        <a href="#" class="image-button">Adopt</a>
+                    </div>
+                    <div class="image-card">
+                        <img src="images/sugar.jpg" alt="Sugarcane">
+                        <p class="image-name">Sugarcane</p>
+                        <a href="#" class="image-button">Adopt</a>
+                    </div>
+                    <div class="image-card">
+                        <img src="images/mango.jpg" alt="Mango">
+                        <p class="image-name">Mango</p>
+                        <a href="#" class="image-button">Adopt</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="footer">
+            <td colspan="6" align="center">
+                <p>By JP ☺</p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
